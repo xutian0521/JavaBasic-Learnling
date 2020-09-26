@@ -8,9 +8,9 @@ public class JdbcDemo1 {
         //1.注册驱动
         DriverManager.registerDriver(new com.mysql.jdbc.Driver());
         //2.获取连接
-        Connection conn= DriverManager.getConnection("jdbc:mysql://192.168.31.62/eesy","root","123456");
+        Connection conn= DriverManager.getConnection("jdbc:mysql://106.13.100.110/mysql","root","xutian@2020");
         //3.获取操作数据库的预处理对象
-        PreparedStatement pstm= conn.prepareStatement("select * from account;");
+        PreparedStatement pstm= conn.prepareStatement("SELECT * FROM help_category;");
         //4.执行SQL，得到结果集
         ResultSet rs= pstm.executeQuery();
         //5.遍历结果集
